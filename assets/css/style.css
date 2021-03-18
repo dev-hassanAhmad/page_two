@@ -1,0 +1,917 @@
+.card-front:hover{
+    transform: translate(0%,15%) rotate(0deg);
+    transition: all 0.7s ease;
+}
+.container{
+    left:45%;
+    right: 50%;
+    top:30%;
+
+    position: absolute;
+}
+.card-front{
+    width: 225px;
+    height: 320px;
+}
+.card{
+    position: absolute;
+}
+.card-2{
+    transform: translate(-3%, -3%);
+
+}
+.card-3{
+    transform: translate(-6%, -6%);
+
+}
+.card-4{
+    transform: translate(-9%, -9%);
+
+}
+.card-5{
+    transform: translate(-12%,-12%);
+
+}
+.card-6{
+    transform: translate(-15%, -15%);
+
+}
+.card-7{
+    transform: translate(-18%, -18%);
+
+}
+/* .card-2:hover{
+    transform: translate(-3%, -8%);
+
+} */
+.card-3{
+    transform: translate(-6%, -6%);
+
+}
+.card-4{
+    transform: translate(-9%, -9%);
+
+}
+.card-5{
+    transform: translate(-12%,-12%);
+
+}
+.card-6{
+    transform: translate(-15%, -15%);
+
+}
+.card-7{
+    transform: translate(-18%, -18%);
+
+}
+
+.spread.card-1{
+    transform: rotate(0deg) translateY(0%) translateX(80%);
+    transition: 0.5s;
+}
+
+.spread.card-2{
+    transform: rotate(0deg) translateY(0%) translateX(60%);
+    
+    transition: 0.5s;
+}
+.spread.card-3{
+    transform: rotate(0deg) translateY(0%) translateX(40%);
+
+    transition: 0.5s;
+}
+.spread.card-4{
+    transform: rotate(0deg) translateY(0%) translateX(20%);
+    transition: 0.5s;
+}
+.spread.card-5{
+    transform: rotate(0deg) translateY(0%) translateX(0%);
+    transition: 0.5s;
+}
+.spread.card-6{
+    transform: rotate(0deg) translateY(0%) translateX(-20%);
+    transition: 0.5s;
+}
+
+.spread.card-7{
+    transform: rotate(0deg) translateY(0%) translateX(-40%);
+    transition: 1s;
+}
+
+
+.spreadCard1{
+    transform: rotate(0deg) translateY(0%) translateX(0%);
+
+    z-index: 0;
+    transition: ease 1s;
+    }
+
+.spreadCard2{
+
+    transform: rotate(0deg) translateY(0%) translateX(-20%);
+    transition: ease 1s;
+    z-index: 1;
+
+}
+.spreadCard3{
+    transform: rotate(0deg) translateY(0%) translateX(-40%);
+    transition: ease 1s;
+
+    z-index: 2;
+
+}
+
+
+/* Unshuffled Card Transition */
+.unShuffledCard1{
+    transform: rotate(0deg) translateY(0%) translateX(20%);
+    transition: 1s;
+    z-index: -1;
+
+
+    }
+
+.unShuffledCard2{
+
+    transform: rotate(0deg) translateY(0%) translateX(40%);
+
+    transition: 1s;
+    z-index: -2;
+
+
+
+}
+.unShuffledCard3{
+    transform: rotate(0deg) translateY(0%) translateX(60%);
+    transition: 1s;
+
+    z-index: -3;
+    
+
+
+}
+
+.unShuffledCard4{
+    transform: rotate(0deg) translateY(0%) translateX(80%);
+    
+    transition: 1s;
+    z-index: -4;
+
+
+}
+
+
+/* RESET */
+.reverse.card-1{
+ 
+    transform: rotate(0deg) translateY(0) translateX(0);
+    transition: all 1s ease-in-out;
+}
+
+.reverse.card-2{
+  
+    transform: rotate(0deg) translateY(-3%) translateX(-3%);
+    
+    transition: all 1s ease-in-out;
+}
+.reverse.card-3{
+
+    transform: rotate(0deg) translateY(-6%) translateX(-6%);
+
+    transition: all 1s ease-in-out;
+}
+.reverse.card-4{
+ 
+    transform: rotate(0deg) translateY(-9%) translateX(-9%);
+    transition: all 1s ease-in-out;
+}
+.reverse.card-5{
+
+    transform: rotate(0deg) translateY(-12%) translateX(-12%);
+    transition: all 1s ease-in-out;
+}
+.reverse.card-6{
+
+    transform: rotate(0deg) translateY(-15%) translateX(-15%);
+    transition: all 1s ease-in-out;
+}
+
+.reverse.card-7{
+  
+    transform: rotate(0deg) translateY(-18%) translateX(-18%);
+    transition: all 1s ease-in-out;
+}
+
+.Click_deck{
+    position: absolute;
+    left: 60%;
+    
+    font-size: xx-large;
+
+}
+.arrow{
+    position: absolute;
+    width: 70px;
+    left: -60%;
+    top: 45%;
+}
+
+.styleNone{
+    display: none;
+}
+.back{
+    display: none;
+}
+
+.selected-card{
+    position: absolute;
+    top: 95%;
+    left: 17%;
+}
+.shuffleButton {
+
+top: 10vh;
+border: none;
+padding: 15px 32px;
+font-size: 16px;
+background-color: #6c2c3c;
+color: white;
+border-radius: 7px;
+
+}
+h1 {
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  h1:before,
+  h1:after {
+    background-color:#6c2c3c;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 30%;
+  }
+  
+  h1:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  
+  h1:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+.reset {
+
+
+border: none;
+font-size: 16px;
+padding: 15px 32px;
+background-color: #6c2c3c;
+color: white;
+border-radius: 7px;
+
+}
+.Buttons{
+position: absolute;
+left:37%;
+top:85%;
+
+}
+.cards{
+
+left: 30%;
+top: 150%;
+
+}
+.backImg{
+width: 400px;
+}
+.shuffle{
+
+animation:  first 2s ease-in-out forwards;
+
+
+}
+.shuffle2{
+
+animation:  second 3s ease-in-out forwards;
+
+}
+.shuffle3{
+
+animation:  third 4s ease-in-out forwards;
+
+}
+resetPosition{
+animation: fourth 1 ease-in-out forwards;
+}
+
+@keyframes first {
+
+50% {
+transform: rotate(0deg) translateY(-25%) translateX(-120%);
+z-index: 0;}
+
+
+
+100% {
+transform: rotate(0deg) translateY(-20%) translateX(-20%);
+z-index: 1;
+
+}
+}
+
+@keyframes second {
+
+50% {
+transform: rotate(0deg) translateY(-25%) translateX(-120%);
+z-index: 0;}
+
+
+
+100% {
+transform: rotate(0deg) translateY(-22%) translateX(-22%);
+z-index: 1;
+
+}
+}
+
+@keyframes third {
+50% {
+transform: rotate(0deg) translateY(-25%) translateX(-600%);
+z-index: 0;}
+
+50% {
+transform: rotate(0deg) translateY(-25%) translateX(-120%);
+z-index: 0;}
+
+
+100% {
+transform: rotate(0deg) translateY(-24%) translateX(-24%);
+z-index: 2;
+
+}
+}
+@keyframes fourth{
+
+50% {
+transform: rotate(0deg) translateY(-5%) translateX(-10%);
+z-index: 0;}
+
+
+
+100% {
+transform: rotate(0deg) translateY(-5%) translateX(-10%);
+z-index: 1;
+
+}
+}
+
+.shuffle_1{
+
+animation:  first_1 2s ease-in-out forwards;
+
+}
+.shuffle_2{
+
+animation:  second_2 3s ease-in-out forwards;
+
+}
+.shuffle_3{
+
+animation:  third_3 4s ease-in-out forwards;
+
+}
+resetPosition{
+animation: fourth 1 ease-in-out forwards;
+}
+
+@keyframes first_1 {
+
+50% {
+transform: rotate(0deg) translateY(-25%) translateX(-120%);
+z-index: 0;}
+
+
+
+100% {
+transform: rotate(0deg) translateY(-16%) translateX(-16%);
+z-index: 1;
+
+}
+}
+
+@keyframes second_2 {
+
+50% {
+transform: rotate(0deg) translateY(-25%) translateX(-120%);
+z-index: 0;}
+
+
+
+
+100% {
+transform: rotate(0deg) translateY(-19%) translateX(-19%);
+z-index: 1;
+
+}
+}
+
+@keyframes third_3 {
+
+
+50% {
+transform: rotate(0deg) translateY(-25%) translateX(-120%);
+z-index: 0;}
+
+
+100% {
+transform: rotate(0deg) translateY(-23%) translateX(-23%);
+z-index: 2;
+
+}
+}
+
+
+/* >>>>>>>>>>>>>>>>>>> */
+
+
+.selected-card-description {
+position: absolute;
+top: 70%;
+left: 50%;
+width: 300px;
+height: 300px;
+
+}
+.desc{
+    height: 40vh;
+    overflow: auto;
+    font-family:'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+    word-spacing: 1px;
+    line-height: 1.5;
+    font-weight: 390;
+
+}
+
+
+.selected-card{
+
+width: 1000px;
+}
+
+.desc-front{
+    position: absolute;
+    top: 170%;
+    left: 15%;
+    
+    
+}
+
+.cardFlip{
+    transform: translate(2%) rotateY(180deg);
+    transition: 1s ease;
+    /* transform: translateX(5%); */
+
+}
+.cardFlip_1{
+    transform: translate(2%) rotateY(180deg);
+    transition: 1s ease;
+    /* transform: translateX(5%); */
+
+}
+h2{
+    font-family: 'Luxus Brut';
+     font-weight: normal;
+      font-style: normal;
+      font-size: Xxx-large;
+      color: #6c2c3c;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+}
+
+h3{
+    font-family: 'Luxus Brut';
+     font-weight: normal;
+      font-style: normal;
+      font-size: xx-large;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+      padding-top: 0px;
+      margin-top: 0px;
+}
+
+@media screen and (max-width: 1024px) {
+    .container{
+      left: 50%;
+  
+    }
+    .Buttons {
+        position: absolute;
+        left: 10%;
+        top: 40%;
+        ;
+    }
+    .shuffleButton{
+        position: absolute;
+        left: 0%;
+        width:105%
+    }
+    .Click_deck{
+   
+        left: 80%;
+        top: 15%;
+ 
+    }
+    .deck-cards{
+        left: -10%;
+    }
+    .selected-card {
+        position: absolute;
+        top: 70%;
+        left:1%;
+    }
+    .desc{
+        height: 25vh;
+        overflow: auto;
+    }
+}
+@media screen and (max-width: 800px) {
+    .container{
+      left: 60%;
+      right: 50%;
+    }
+    .Buttons {
+        position: absolute;
+        left: 42%;
+        top: 70%;
+    }
+
+    .shuffleButton{
+        /* position: relative; */
+        top:0vh;
+        left: 110%;
+    }
+    .Click_deck{
+   
+        left: 100%;
+        top: 15%;
+        width: 150px;
+ 
+    }
+    .selected-card {
+        position: absolute;
+        top: 80%;
+        left:1%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        left:40%;
+        right: 50%;
+        top:20%;
+    
+        position: absolute;
+    }
+    .Click_deck{
+   
+        left: 65%;
+        top: 5%;
+        width: 80px;
+        font-size:small;
+ 
+    }
+    .Click_deck img{
+        width: 25px;
+    }
+
+    h1:before,
+    h1:after {
+      background-color:#6c2c3c;
+      content: "";
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 30%;
+      color: #6c2c3c;
+    }
+    
+    h1:before {
+      right: 0.5em;
+      margin-left: -50%;
+    }
+    
+    h1:after {
+      left: 0.5em;
+      margin-right: -50%;
+    }
+    .card-front{
+        width: 110px;
+        height: 160px;
+    }
+    .card-2{
+        transform: translate(-2%, -2%);
+    
+    }
+    .card-3{
+        transform: translate(-4%, -4%);
+    
+    }
+    .card-4{
+        transform: translate(-6%, -6%);
+    
+    }
+    .card-5{
+        transform: translate(-8%,-8%);
+    
+    }
+    .card-6{
+        transform: translate(-10%, -10%);
+    
+    }
+    .card-7{
+        transform: translate(-12%, -12%);
+    
+    }
+
+    .card-3{
+        transform: translate(-6%, -6%);
+    
+    }
+    .card-4{
+        transform: translate(-9%, -9%);
+    
+    }
+    .card-5{
+        transform: translate(-12%,-12%);
+    
+    }
+    .card-6{
+        transform: translate(-15%, -15%);
+    
+    }
+    .card-7{
+        transform: translate(-18%, -18%);
+    
+    }
+    
+    .spread.card-1{
+        transform: rotate(15deg) translateY(-10%) translateX(130%);
+        transition: 0.5s;
+    }
+    
+    .spread.card-2{
+        transform: rotate(10deg) translateY(-7%) translateX(90%);
+        
+        transition: 0.5s;
+    }
+    .spread.card-3{
+        transform: rotate(10deg) translateY(-15%) translateX(40%);
+    
+        transition: 0.5s;
+    }
+    .spread.card-4{
+        transform: rotate(0deg) translateY(-15%) translateX(10%);
+        transition: 0.5s;
+    }
+    .spread.card-5{
+        transform: rotate(0deg) translateY(-10%) translateX(-40%);
+        transition: 0.5s;
+    }
+    .spread.card-6{
+        transform: rotate(-7deg) translateY(-10%) translateX(-60%);
+        transition: 0.5s;
+    }
+    
+    .spread.card-7{
+        transform: rotate(-15deg) translateY(-5%) translateX(-90%);
+        transition: 1s;
+    }
+
+
+/* ////////////////////// */
+
+
+.spread.card-1{
+    transform: rotate(0deg) translateY(0%) translateX(80%);
+    transition: 0.5s;
+}
+
+.spread.card-2{
+    transform: rotate(0deg) translateY(0%) translateX(60%);
+    
+    transition: 0.5s;
+}
+.spread.card-3{
+    transform: rotate(0deg) translateY(0%) translateX(40%);
+
+    transition: 0.5s;
+}
+.spread.card-4{
+    transform: rotate(0deg) translateY(0%) translateX(20%);
+    transition: 0.5s;
+}
+.spread.card-5{
+    transform: rotate(0deg) translateY(0%) translateX(0%);
+    transition: 0.5s;
+}
+.spread.card-6{
+    transform: rotate(0deg) translateY(0%) translateX(-20%);
+    transition: 0.5s;
+}
+
+.spread.card-7{
+    transform: rotate(0deg) translateY(0%) translateX(-40%);
+    transition: 1s;
+}
+
+
+.spreadCard1{
+    transform: rotate(0deg) translateY(0%) translateX(0%);
+
+    z-index: 0;
+    transition: ease 1s;
+    }
+
+.spreadCard2{
+
+    transform: rotate(0deg) translateY(0%) translateX(-20%);
+    transition: ease 1s;
+    z-index: 1;
+
+}
+.spreadCard3{
+    transform: rotate(0deg) translateY(0%) translateX(-40%);
+    transition: ease 1s;
+
+    z-index: 2;
+
+}
+
+
+/* Unshuffled Card Transition */
+.unShuffledCard1{
+    transform: rotate(0deg) translateY(0%) translateX(20%);
+    transition: 1s;
+    z-index: -1;
+
+
+    }
+
+.unShuffledCard2{
+
+    transform: rotate(0deg) translateY(0%) translateX(40%);
+
+    transition: 1s;
+    z-index: -2;
+
+
+
+}
+.unShuffledCard3{
+    transform: rotate(0deg) translateY(0%) translateX(60%);
+    transition: 1s;
+
+    z-index: -3;
+    
+
+
+}
+
+.unShuffledCard4{
+    transform: rotate(0deg) translateY(0%) translateX(80%);
+    
+    transition: 1s;
+    z-index: -4;
+
+
+}
+
+
+
+/* //////////////////// */
+
+    /* RESET */
+    .reverse.card-1{
+ 
+        transform: rotate(0deg) translateY(0) translateX(0);
+        transition: all 1s ease-in-out;
+    }
+    
+    .reverse.card-2{
+ 
+        transform: rotate(0deg) translateY(-3%) translateX(-3%);
+        
+        transition: all 1s ease-in-out;
+    }
+    .reverse.card-3{
+       
+        transform: rotate(0deg) translateY(-6%) translateX(-6%);
+    
+        transition: all 1s ease-in-out;
+    }
+    .reverse.card-4{
+     
+        transform: rotate(0deg) translateY(-9%) translateX(-9%);
+        transition: all 1s ease-in-out;
+    }
+    .reverse.card-5{
+    
+        transform: rotate(0deg) translateY(-12%) translateX(-12%);
+        transition: all 1s ease-in-out;
+    }
+    .reverse.card-6{
+
+        transform: rotate(0deg) translateY(-15%) translateX(-15%);
+        transition: all 1s ease-in-out;
+    }
+    
+    .reverse.card-7{
+
+        transform: rotate(0deg) translateY(-18%) translateX(-18%);
+        transition: all 1s ease-in-out;
+    }
+    .Buttons{
+
+            position: absolute;
+            left: 10%;
+            top: 60%;
+            font-size: small;
+        }
+    .reset {
+        padding: 10px 15px;
+    }
+    .shuffleButton {
+        padding: 10px 4px;
+        width: 110%;
+    }
+
+    .selected-card-description {
+        position: absolute;
+        top:800%;
+        left: 10%;
+        width: 300px;
+        height: 400px;
+        overflow-y: scroll;
+        
+        }
+        .selected-card{
+            width: 360px;
+        }
+        .cards{
+
+            position: absolute;
+            left: -50%;
+            top: 170%;
+            width: 300px;
+
+            
+            }
+
+    .desc-front{
+        width: 300px;
+        left: 70%;
+    }
+  }
+h2{
+    font-family: 'Luxus Brut';
+     font-weight: normal;
+      font-style: normal;
+      font-size: Xxx-large;
+      color: #6c2c3c;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+}
+
+h3{
+    font-family: 'Source Sans Pro ';
+    color: #6c2c3c;
+     font-weight: normal;
+      font-style: normal;
+      font-size: xx-large;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+      padding-top: 0px;
+      margin-top: 0px;
+}
+
+.letters{
+    color: #6c2c3c;
+    line-height:1;
+}
+
+
+
+
+.your_card{
+    color: #6c2c3c;
+}
+.desc{
+    font-family: 'Source Sans Pro ';
+}
