@@ -1,16 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card-front:hover{
+    transform: translate(0%,15%) rotate(0deg);
+    transition: all 0.7s ease;
+}
 .wrapper{
-    width: 80vw;
+    width: 70vw;
+
     margin: auto;
 }
 
-
+.deck-cards{
+    margin: auto;
+}
 .card{
     position: absolute;
+    transform: translateX(40vw) translateY(10vh);
+    margin: auto;
+    /* display: none; */
 }
 .deck-container{
-    position: relative;
-    left: 40%;
-    top: 30px;
+    /* position: relative; */
+    /* left: 40%; */
+    /* top: 30px; */
+    /* background-color: green; */
+    margin: auto;
+    height: 300px;
+    width: 100%;
+}
+.test{
+    width: 20px;
+    height: 30px;
+    background-color: antiquewhite;
+    margin: auto;
 }
 .card-front{
     width: 225px;
@@ -28,9 +55,11 @@
 
 .font-container{
     position: relative;
-    top: 80px;
-    left: 20%;
+
+    top: -300px;
+    left: 0%;
     width: 300px;
+
 }
 
 .letters{
@@ -43,20 +72,25 @@
 }
 .arrow{
     transform: rotateY(180deg) rotate(-270deg) translateY(300%) translateX(100%);
+    position: relative;
+    top: -50px;
     
     }
 
 .Buttons{
-    position: relative;
-    left:38%;
-    top:50vh;
-    width: 500px;
-    margin: none;
+    /* /* position: relative; */
+    /* margin: auto; */
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    /* background-color: blue; */
+    width: fit-content;
     
     }
 
 .shuffleButton {
-
+        margin: auto;
+        /* background-color: brown; */
         border: none;
         padding: 15px 32px;
         font-size: 16px;
@@ -79,13 +113,15 @@
     }
 
 .selected-card{
+    width: fit-content;
     position: relative;
-    top: 270px;
-    left: 30%;
+    /* top: 100px; */
+    left: 15%;
+    /* background-color: red; */
 }
 .cardDay{
     position: relative;
-    top: 250px;
+    top: -100px;
     width: 70vw;
     margin: auto;
 }
@@ -95,7 +131,7 @@
 }
 .card-desc{
     position: relative;
-    top: -30px;
+    
     left: 50px;
 }
 .desc{
@@ -187,5 +223,172 @@ h3{
     word-spacing: 1px;
     line-height: 1.5;
     font-weight: 390;
+    font-family: 'Source Sans Pro ';
+}
+
+
+
+@media screen and (max-width: 1025px) {
+    .deck-container{
+
+        margin: auto;
+        height: 300px;
+        width: 100%;
+        transform: translateX(-182px);
+    }
+    .font-container{
+        position: relative;
+    
+        top: -300px;
+        left: 2vw;
+        width: 300px;
+    
+    }
+    .Buttons{
+        /* /* position: relative; */
+        /* margin: auto; */
+        margin-top: 180px;
+        margin-right: auto;
+        margin-left: auto;
+        /* background-color: blue; */
+        width: fit-content;
+        
+        }
+
+}
+
+@media screen and (max-width: 1025px) {
+    .deck-container{
+
+        margin: auto;
+        height: 300px;
+        width: 100%;
+        /* transform: translateX(-182px); */
+    }
+    .font-container{
+        position: relative;
+    
+        top: -300px;
+        left: -10vw;
+        width: 300px;
+    
+    }
+    .Buttons{
+        /* /* position: relative; */
+        /* margin: auto; */
+        margin-top: 180px;
+        margin-right: auto;
+        margin-left: auto;
+        /* background-color: blue; */
+        width: fit-content;
+        
+        }
+    .selected-card{
+            width: fit-content;
+            position: relative;
+            /* top: 100px; */
+            left: -5%;
+            /* background-color: red; */
+        }
+
+        .font-container{
+            position: relative;
+        
+            width: fit-content;
+        
+        }
+    .letters{
+        width: fit-content;
+        margin: 0;
+        z-index: -100;
+    }
+
+}
+
+
+@media screen and (max-width: 427px) {
+    .deck-container{
+        position: relative;
+        margin: auto;
+        height: 300px;
+        width: 100%;
+        top: 7vh;
+        /* transform: translateX(-182px); */
+    }
+
+    .front img{
+        width:120px;
+        height: 170px;
+        /* display: none; */
+
+    }
+    .font-container{
+        position: relative;
+        transform: translateY(-9vh) translateX(20vw);
+    }
+    .Click_deck{
+        margin-top: 10%;
+    }
+    .arrow{
+        display: none;
+    }
+    .Buttons{
+        /* /* position: relative; */
+        /* margin: auto; */
+        margin-top: 5vh;
+        margin-right: auto;
+        margin-left: auto;
+        /* background-color: blue; */
+        width: fit-content;
+        
+        }
+    .shuffleButton {
+            margin: auto;
+            /* background-color: brown; */
+            border: none;
+            padding: 10px 15px;
+            font-size: 9px;
+            background-color: #6c2c3c;
+            color: white;
+            border-radius: 7px;
+            
+    }
+    
+    .reset {
+        
+        margin-left: 15px;
+        border: none;
+        font-size: 9px;
+        padding: 10px 15px;
+        background-color: #6c2c3c;
+        color: white;
+        border-radius: 7px;
+        
+        }
+
+        .selected-card{
+            display: flex;
+            flex-flow: column;
+        }
+        .your-card img{
+            position: relative;
+            top: -50px;
+            /* left: 20%; */
+        }
+        
+        .card-desc{
+            position: relative;
+            top: 40px;
+            left: 0px;
+            text-align: center;
+
+        }
+}
+
+h2{
+    font-family: 'Source Sans Pro ';
+}
+
+.desc{
     font-family: 'Source Sans Pro ';
 }
